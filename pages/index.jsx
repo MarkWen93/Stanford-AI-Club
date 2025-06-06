@@ -64,6 +64,34 @@ export default function Home() {
         </p>
       </section>
 
+      <section id="events" className="bg-white text-center py-24 px-4 sm:px-6 fade-in-section">
+        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Upcoming Events</h2>
+        <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
+          <div className="bg-[#f8f7f4] rounded-xl p-6 shadow">
+            <h3 className="text-xl font-bold text-[#8C1515] mb-2">🔥 Summer 2025</h3>
+            <ul className="list-disc list-inside text-[#2C1E3D] space-y-2 text-sm sm:text-base">
+              <li>🌭 Weekly BBQ & Social at Wilbur Field</li>
+              <li>🏊 Chill & Connect: Sunday Pool Meetups</li>
+              <li>💡 Fireside AI Talks by founders & professors</li>
+              <li>🎮 Hack & Play: Build & brainstorm projects</li>
+            </ul>
+          </div>
+          <div className="bg-[#f8f7f4] rounded-xl p-6 shadow">
+            <h3 className="text-xl font-bold text-[#8C1515] mb-2">🍁 Fall 2025</h3>
+            <p className="text-[#2C1E3D] mb-4 text-sm sm:text-base">
+              Launching our flagship 8-week accelerator program for AI-native builders, inspired by Sequoia Arc and Speedrun.
+            </p>
+            <ul className="list-disc list-inside text-[#2C1E3D] space-y-2 text-sm sm:text-base">
+              <li>🧭 Structured cohort journey</li>
+              <li>💼 Mentorship from Stanford alumni & investors</li>
+              <li>🚀 $250K startup grants for top teams</li>
+              <li>📣 Demo Day at Stanford</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section id="journey" className="bg-white text-center py-24 px-4 sm:px-6 fade-in-section">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Your Hero's Journey</h2>
         <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
@@ -101,34 +129,6 @@ export default function Home() {
               <p className="text-white text-sm">{item.desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section id="events" className="bg-white text-center py-24 px-4 sm:px-6 fade-in-section">
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Upcoming Events</h2>
-        <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
-          <div className="bg-[#f8f7f4] rounded-xl p-6 shadow">
-            <h3 className="text-xl font-bold text-[#8C1515] mb-2">🔥 Summer 2025</h3>
-            <ul className="list-disc list-inside text-[#2C1E3D] space-y-2 text-sm sm:text-base">
-              <li>🌭 Weekly BBQ & Social at Wilbur Field</li>
-              <li>🏊 Chill & Connect: Sunday Pool Meetups</li>
-              <li>💡 Fireside AI Talks by founders & professors</li>
-              <li>🎮 Hack & Play: Build & brainstorm projects</li>
-            </ul>
-          </div>
-          <div className="bg-[#f8f7f4] rounded-xl p-6 shadow">
-            <h3 className="text-xl font-bold text-[#8C1515] mb-2">🍁 Fall 2025</h3>
-            <p className="text-[#2C1E3D] mb-4 text-sm sm:text-base">
-              Launching our flagship 8-week accelerator program for AI-native builders, inspired by Sequoia Arc and Speedrun.
-            </p>
-            <ul className="list-disc list-inside text-[#2C1E3D] space-y-2 text-sm sm:text-base">
-              <li>🧭 Structured cohort journey</li>
-              <li>💼 Mentorship from Stanford alumni & investors</li>
-              <li>🚀 $250K startup grants for top teams</li>
-              <li>📣 Demo Day at Stanford</li>
-            </ul>
-          </div>
         </div>
       </section>
 
