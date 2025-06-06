@@ -87,8 +87,6 @@ export default function Home() {
         </div>
       </section>
 
-<<<<<<< HEAD
-=======
       <section id="team" className="bg-[#f8f7f4] text-center py-24 px-4 sm:px-6 fade-in-section">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Who Supports You</h2>
         <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
@@ -106,7 +104,6 @@ export default function Home() {
         </div>
       </section>
 
->>>>>>> 3215118b86b6de2059987a039478bfcae5f3ce0d
       <section id="events" className="bg-white text-center py-24 px-4 sm:px-6 fade-in-section">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Upcoming Events</h2>
         <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
@@ -135,26 +132,6 @@ export default function Home() {
         </div>
       </section>
 
-<<<<<<< HEAD
-      <section id="team" className="bg-[#f8f7f4] text-center py-24 px-4 sm:px-6 fade-in-section">
-        <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Who Supports You</h2>
-        <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
-        <p className="text-base sm:text-lg text-[#2C1E3D] max-w-3xl mx-auto mb-10">
-          Behind every great AI-native product is a team of people with diverse talents and deep conviction. Our club is supported by repeat founders, investors, professors, engineers, artists, and peers — all here to help you succeed.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {teamStructure.map((item, idx) => (
-            <div key={idx} className="rounded-2xl p-6 shadow-md" style={{ backgroundColor: item.color }}>
-              <div className="text-4xl mb-2">{item.icon}</div>
-              <h3 className="text-xl font-bold text-white mb-1">{item.role}</h3>
-              <p className="text-white text-sm">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-=======
->>>>>>> 3215118b86b6de2059987a039478bfcae5f3ce0d
       <section id="volunteer" className="bg-[#f8f7f4] text-center py-24 px-4 sm:px-6 fade-in-section">
         <h2 className="text-2xl sm:text-4xl font-extrabold text-[#8C1515] mb-4">Want to Help?</h2>
         <div className="w-12 h-1 bg-[#8C1515] mx-auto mb-8" />
