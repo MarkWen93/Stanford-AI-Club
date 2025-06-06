@@ -111,7 +111,7 @@ export default function Home() {
           <p className="text-base sm:text-lg text-[#2C1E3D] mb-6 max-w-2xl mx-auto">
             We are looking for the next generation of world changers.
           </p>
-          <a href="YOUR_GOOGLE_FORM_LINK" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#8C1515] text-white px-6 py-3 rounded-full font-bold hover:bg-[#A33333] transition text-sm sm:text-base">Apply Now</a>
+          <a href="https://forms.gle/9NSVUJhAFRAdpdAs7" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#8C1515] text-white px-6 py-3 rounded-full font-bold hover:bg-[#A33333] transition text-sm sm:text-base">Apply Now</a>
         </div>
       </section>
 
@@ -155,7 +155,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-8">
-          <a href="YOUR_VOLUNTEER_FORM_LINK" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#8C1515] text-white px-6 py-3 rounded-full font-bold hover:bg-[#A33333] transition">I Want to Help</a>
+          <a href="https://forms.gle/hfepx7QoA2kJc3Fz5" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#8C1515] text-white px-6 py-3 rounded-full font-bold hover:bg-[#A33333] transition">I Want to Help</a>
         </div>
       </section>
 
