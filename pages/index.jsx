@@ -49,12 +49,36 @@ export default function Home() {
           <a href="#team" className="hover:text-[#FFD700]">Support</a>
           <a href="#volunteer" className="hover:text-[#FFD700]">Volunteer</a>
         </div>
+        <button
+          className="sm:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none"
+          onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          aria-label="Open menu"
+        >
+          <span className={`block w-6 h-0.5 bg-white mb-1 transition-transform duration-300 ${mobileNavOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+          <span className={`block w-6 h-0.5 bg-white mb-1 transition-opacity duration-300 ${mobileNavOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${mobileNavOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+        </button>
       </nav>
+
+      {mobileNavOpen && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-40 flex sm:hidden" onClick={() => setMobileNavOpen(false)}>
+          <div
+            className="bg-[#8C1515] text-white w-3/4 max-w-xs h-full p-6 flex flex-col space-y-6 shadow-lg"
+            onClick={e => e.stopPropagation()}
+          >
+            <a href="#mission" className="hover:text-[#FFD700]" onClick={() => setMobileNavOpen(false)}>Mission</a>
+            <a href="#events" className="hover:text-[#FFD700]" onClick={() => setMobileNavOpen(false)}>Events</a>
+            <a href="#journey" className="hover:text-[#FFD700]" onClick={() => setMobileNavOpen(false)}>Journey</a>
+            <a href="#team" className="hover:text-[#FFD700]" onClick={() => setMobileNavOpen(false)}>Support</a>
+            <a href="#volunteer" className="hover:text-[#FFD700]" onClick={() => setMobileNavOpen(false)}>Volunteer</a>
+          </div>
+        </div>
+      )}
 
       <section className="text-center py-24 px-4 sm:px-6 bg-[#8C1515] text-white">
         <h1 className="text-3xl sm:text-5xl font-bold mb-4">AI builder Club@Stanford</h1>
         <p className="text-base sm:text-lg mb-2 italic">A student-initiated interest club</p>
-        <a href="#journey" className="inline-block bg-white text-[#8C1515] px-6 py-3 rounded-full font-bold hover:bg-[#FFD700] transition text-sm sm:text-base">Start Your Journey</a>
+        <a href="#journey" className="inline-block bg-white text-[#8C1515] px-6 py-3 rounded-full font-bold hover:bg-[#FFD700] transition text-sm sm:text-base">Apply Now</a>
       </section>
 
       <section id="mission" className="bg-[#f8f7f4] text-center py-24 px-4 sm:px-6 fade-in-section">
