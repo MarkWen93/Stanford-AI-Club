@@ -22,11 +22,12 @@ export default function Home() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   useEffect(() => {
-    const sections = document.querySelectorAll('.fade-in-section');
-    const observer = new IntersectionObserver((entries) => {
+    const sections = Array.from(document.querySelectorAll('.fade-in-section')).slice(0, 5);
+    const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('opacity-100', 'translate-y-0');
+          obs.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
@@ -40,19 +41,19 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans overflow-x-hidden">
       <nav className="bg-[#8C1515] text-white px-4 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
-        <span className="text-xl font-bold">Stanford AI Builder Club</span>
+        <span className="text-xl font-bold">AI builder Club@Stanford</span>
         <div className="space-x-4 hidden sm:flex">
           <a href="#mission" className="hover:text-[#FFD700]">Mission</a>
+          <a href="#events" className="hover:text-[#FFD700]">Events</a>
           <a href="#journey" className="hover:text-[#FFD700]">Journey</a>
           <a href="#team" className="hover:text-[#FFD700]">Support</a>
-          <a href="#events" className="hover:text-[#FFD700]">Events</a>
           <a href="#volunteer" className="hover:text-[#FFD700]">Volunteer</a>
         </div>
       </nav>
 
       <section className="text-center py-24 px-4 sm:px-6 bg-[#8C1515] text-white">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-4">Stanford AI Builder Club</h1>
-        <p className="text-base sm:text-xl mb-8">Empowering students to build and lead with AI</p>
+        <h1 className="text-3xl sm:text-5xl font-bold mb-4">AI builder Club@Stanford</h1>
+        <p className="text-base sm:text-lg mb-2 italic">A student-initiated interest club</p>
         <a href="#journey" className="inline-block bg-white text-[#8C1515] px-6 py-3 rounded-full font-bold hover:bg-[#FFD700] transition text-sm sm:text-base">Start Your Journey</a>
       </section>
 
@@ -159,8 +160,12 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-[#2d2233] text-white text-center py-6 px-4 fade-in-section">
-        <p className="text-sm">© 2025 Stanford AI Builder Club. All rights reserved.</p>
+      <footer className="bg-[#2d2233] text-white w-full">
+        <div className="max-w-4xl mx-auto px-4 py-8 border-t border-[#f8f7f4]/30 flex items-center justify-center min-h-[64px]">
+          <p className="text-sm sm:text-base font-medium text-center break-words">
+            © 2025 AI builder Club@Stanford. All rights reserved.
+          </p>
+        </div>
       </footer>
     </div>
   );
